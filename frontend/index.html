@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three-Tier Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Three-Tier Todo List</h1>
+
+      <div class="input-section">
+        <input type="text" id="todoInput" placeholder="Add a new task..." />
+        <button id="addTodoBtn">Add Task</button>
+      </div>
+
+      <div class="filter-section">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul class="todo-list" id="todoList">
+        <!-- Todo items will be added here dynamically -->
+      </ul>
+    </div>
+
+    <div class="notification" id="notification">Task added successfully!</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
